@@ -1,0 +1,379 @@
+2025-12-19T12:55:44.459+07:00  INFO 91038 --- [restartedMain] c.q.laptopshop.LaptopshopApplication     : Starting LaptopshopApplication using Java 17.0.12 with PID 91038 (/Users/quangminh/Code Workspace/laptopshop/target/classes started by quangminh in /Users/quangminh/Code Workspace/laptopshop)
+2025-12-19T12:55:44.462+07:00  INFO 91038 --- [restartedMain] c.q.laptopshop.LaptopshopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-19T12:55:44.484+07:00  INFO 91038 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-19T12:55:44.484+07:00  INFO 91038 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-19T12:55:44.759+07:00  INFO 91038 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'localeResolver' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=localeResolver; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webMvcConfig; factoryMethodName=localeResolver; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/quangminh/laptopshop/config/WebMvcConfig.class]]
+2025-12-19T12:55:44.847+07:00  INFO 91038 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19T12:55:44.882+07:00  INFO 91038 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 29 ms. Found 7 JPA repository interfaces.
+2025-12-19T12:55:45.298+07:00  INFO 91038 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-19T12:55:45.305+07:00  INFO 91038 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-19T12:55:45.305+07:00  INFO 91038 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-12-19T12:55:45.424+07:00  INFO 91038 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-19T12:55:45.428+07:00  INFO 91038 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-19T12:55:45.428+07:00  INFO 91038 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 943 ms
+2025-12-19T12:55:45.499+07:00  INFO 91038 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-19T12:55:45.727+07:00  INFO 91038 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7af4b6be
+2025-12-19T12:55:45.727+07:00  INFO 91038 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-19T12:55:45.802+07:00  INFO 91038 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-19T12:55:45.833+07:00  INFO 91038 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-12-19T12:55:45.851+07:00  INFO 91038 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-19T12:55:45.977+07:00  INFO 91038 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19T12:55:46.040+07:00  INFO 91038 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-19T12:55:46.547+07:00  INFO 91038 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-19T12:55:46.658+07:00  INFO 91038 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19T12:55:46.907+07:00  WARN 91038 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19T12:55:46.924+07:00  INFO 91038 --- [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-12-19T12:55:46.924+07:00  WARN 91038 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-12-19T12:55:46.949+07:00  WARN 91038 --- [restartedMain] thorizationManagerRequestMatcherRegistry : One of the patterns in [/, /login, register, /product/**, /client/**, /css/**, /js/**, /images/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-12-19T12:55:47.310+07:00  INFO 91038 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-19T12:55:47.338+07:00  INFO 91038 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-19T12:55:47.344+07:00  INFO 91038 --- [restartedMain] c.q.laptopshop.LaptopshopApplication     : Started LaptopshopApplication in 3.117 seconds (process running for 3.357)
+2025-12-19T12:56:48.255+07:00  INFO 91038 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19T12:56:48.256+07:00  INFO 91038 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-19T12:56:48.257+07:00  INFO 91038 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-12-19T12:57:42.604+07:00 DEBUG 91038 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.avatar,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role_id 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2025-12-19T12:57:42.623+07:00 DEBUG 91038 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.sum,
+        u1_0.id,
+        u1_0.address,
+        u1_0.avatar,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        carts c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    left join
+        roles r1_0 
+            on r1_0.id=u1_0.role_id 
+    where
+        c1_0.user_id=?
+2025-12-19T12:57:42.634+07:00 DEBUG 91038 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2025-12-19T12:57:55.438+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.avatar,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role_id 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2025-12-19T12:57:55.442+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.sum,
+        u1_0.id,
+        u1_0.address,
+        u1_0.avatar,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        carts c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    left join
+        roles r1_0 
+            on r1_0.id=u1_0.role_id 
+    where
+        c1_0.user_id=?
+2025-12-19T12:57:55.446+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2025-12-19T12:57:55.552+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.avatar,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role_id 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2025-12-19T12:57:55.553+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.sum,
+        u1_0.id,
+        u1_0.address,
+        u1_0.avatar,
+        u1_0.email,
+        u1_0.full_name,
+        u1_0.password,
+        u1_0.phone_number,
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        carts c1_0 
+    left join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    left join
+        roles r1_0 
+            on r1_0.id=u1_0.role_id 
+    where
+        c1_0.user_id=?
+2025-12-19T12:57:55.556+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        r1_0.id,
+        r1_0.description,
+        r1_0.name 
+    from
+        roles r1_0 
+    where
+        r1_0.id=?
+2025-12-19T12:57:55.714+07:00 DEBUG 91038 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-12-19T12:57:55.720+07:00 DEBUG 91038 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        products p1_0
+2025-12-19T12:57:55.728+07:00 DEBUG 91038 --- [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        orders o1_0
+2025-12-19T12:57:56.240+07:00  WARN 91038 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2025-12-19T12:57:56.241+07:00  WARN 91038 --- [http-nio-8080-exec-6] o.s.web.servlet.PageNotFound             : No endpoint GET /favicon.ico.
+2025-12-19T12:58:00.429+07:00 DEBUG 91038 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-12-19T12:58:00.433+07:00 DEBUG 91038 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        products p1_0
+2025-12-19T12:58:00.435+07:00 DEBUG 91038 --- [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        orders o1_0
+2025-12-19T12:58:05.418+07:00 DEBUG 91038 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.brand,
+        p1_0.detail_desc,
+        p1_0.image,
+        p1_0.name,
+        p1_0.price,
+        p1_0.purpose,
+        p1_0.quantity,
+        p1_0.short_desc,
+        p1_0.sold 
+    from
+        products p1_0
+2025-12-19T12:58:11.390+07:00 DEBUG 91038 --- [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.brand,
+        p1_0.detail_desc,
+        p1_0.image,
+        p1_0.name,
+        p1_0.price,
+        p1_0.purpose,
+        p1_0.quantity,
+        p1_0.short_desc,
+        p1_0.sold 
+    from
+        products p1_0
+2025-12-19T12:58:16.194+07:00 DEBUG 91038 --- [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.brand,
+        p1_0.detail_desc,
+        p1_0.image,
+        p1_0.name,
+        p1_0.price,
+        p1_0.purpose,
+        p1_0.quantity,
+        p1_0.short_desc,
+        p1_0.sold 
+    from
+        products p1_0 
+    where
+        p1_0.id=?
+2025-12-19T13:12:21.967+07:00  WARN 91038 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m4s366ms).
+2025-12-19T13:17:34.091+07:00  WARN 91038 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s109ms).
+2025-12-19T13:22:17.031+07:00  WARN 91038 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s939ms).
+2025-12-19T13:27:27.401+07:00  WARN 91038 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m40s361ms).
+2025-12-19T13:32:10.256+07:00  WARN 91038 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m42s854ms).
+2025-12-19T14:42:30.339+07:00 DEBUG 91038 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-12-19T14:42:30.351+07:00 DEBUG 91038 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        products p1_0
+2025-12-19T14:42:30.374+07:00 DEBUG 91038 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        orders o1_0
+2025-12-19T14:42:31.463+07:00 DEBUG 91038 --- [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.brand,
+        p1_0.detail_desc,
+        p1_0.image,
+        p1_0.name,
+        p1_0.price,
+        p1_0.purpose,
+        p1_0.quantity,
+        p1_0.short_desc,
+        p1_0.sold 
+    from
+        products p1_0
+2025-12-19T14:42:31.542+07:00 DEBUG 91038 --- [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.brand,
+        p1_0.detail_desc,
+        p1_0.image,
+        p1_0.name,
+        p1_0.price,
+        p1_0.purpose,
+        p1_0.quantity,
+        p1_0.short_desc,
+        p1_0.sold 
+    from
+        products p1_0
+2025-12-19T14:45:36.556+07:00  INFO 91038 --- [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-19T14:45:36.566+07:00  INFO 91038 --- [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-12-19T14:45:36.574+07:00  INFO 91038 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19T14:45:36.580+07:00  INFO 91038 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-12-19T14:45:36.587+07:00  INFO 91038 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-12-19T14:46:07.040+07:00  INFO 92293 --- [restartedMain] c.q.laptopshop.LaptopshopApplication     : Starting LaptopshopApplication using Java 17.0.12 with PID 92293 (/Users/quangminh/Code Workspace/laptop_shop/target/classes started by quangminh in /Users/quangminh/Code Workspace/laptop_shop)
+2025-12-19T14:46:07.042+07:00  INFO 92293 --- [restartedMain] c.q.laptopshop.LaptopshopApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-12-19T14:46:07.065+07:00  INFO 92293 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-19T14:46:07.065+07:00  INFO 92293 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-19T14:46:07.347+07:00  INFO 92293 --- [restartedMain] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'localeResolver' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=localeResolver; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/springframework/web/servlet/config/annotation/DelegatingWebMvcConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=webMvcConfig; factoryMethodName=localeResolver; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/quangminh/laptopshop/config/WebMvcConfig.class]]
+2025-12-19T14:46:07.437+07:00  INFO 92293 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-19T14:46:07.473+07:00  INFO 92293 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 7 JPA repository interfaces.
+2025-12-19T14:46:07.888+07:00  INFO 92293 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-12-19T14:46:07.895+07:00  INFO 92293 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-12-19T14:46:07.895+07:00  INFO 92293 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-12-19T14:46:08.016+07:00  INFO 92293 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2025-12-19T14:46:08.020+07:00  INFO 92293 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-12-19T14:46:08.020+07:00  INFO 92293 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 955 ms
+2025-12-19T14:46:08.083+07:00  INFO 92293 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-12-19T14:46:08.251+07:00  INFO 92293 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4daaba90
+2025-12-19T14:46:08.252+07:00  INFO 92293 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-12-19T14:46:08.320+07:00  INFO 92293 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-19T14:46:08.350+07:00  INFO 92293 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-12-19T14:46:08.373+07:00  INFO 92293 --- [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-12-19T14:46:08.507+07:00  INFO 92293 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-19T14:46:08.566+07:00  INFO 92293 --- [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.4.4
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-19T14:46:09.077+07:00  INFO 92293 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-19T14:46:09.168+07:00  INFO 92293 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-19T14:46:09.417+07:00  WARN 92293 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-19T14:46:09.436+07:00  INFO 92293 --- [restartedMain] eAuthenticationProviderManagerConfigurer : Global AuthenticationManager configured with AuthenticationProvider bean with name authProvider
+2025-12-19T14:46:09.436+07:00  WARN 92293 --- [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used by Spring Security for automatically configuring username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider. If the current configuration is intentional, to turn off this warning, increase the logging level of 'org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer' to ERROR
+2025-12-19T14:46:09.462+07:00  WARN 92293 --- [restartedMain] thorizationManagerRequestMatcherRegistry : One of the patterns in [/, /login, register, /product/**, /client/**, /css/**, /js/**, /images/**] is missing a leading slash. This is discouraged; please include the leading slash in all your request matcher patterns. In future versions of Spring Security, leaving out the leading slash will result in an exception.
+2025-12-19T14:46:09.834+07:00  INFO 92293 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-12-19T14:46:09.862+07:00  INFO 92293 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-12-19T14:46:09.867+07:00  INFO 92293 --- [restartedMain] c.q.laptopshop.LaptopshopApplication     : Started LaptopshopApplication in 3.055 seconds (process running for 3.281)
+2025-12-19T14:46:19.188+07:00  INFO 92293 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-19T14:46:19.195+07:00  INFO 92293 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-12-19T14:46:19.214+07:00  INFO 92293 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2025-12-19T14:46:19.592+07:00 DEBUG 92293 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        users u1_0
+2025-12-19T14:46:19.602+07:00 DEBUG 92293 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        products p1_0
+2025-12-19T14:46:19.608+07:00 DEBUG 92293 --- [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        count(*) 
+    from
+        orders o1_0
+2025-12-19T14:46:20.556+07:00 DEBUG 92293 --- [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.brand,
+        p1_0.detail_desc,
+        p1_0.image,
+        p1_0.name,
+        p1_0.price,
+        p1_0.purpose,
+        p1_0.quantity,
+        p1_0.short_desc,
+        p1_0.sold 
+    from
+        products p1_0
