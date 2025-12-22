@@ -21,6 +21,7 @@ import com.quangminh.laptopshop.service.UserService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomePageController {
@@ -35,6 +36,13 @@ public class HomePageController {
         this.passwordEncoder = passwordEncoder;
         this.orderService = orderService;
     }
+
+    @GetMapping("/health")
+    @ResponseBody
+    public String health() {
+        return "OK";
+    }
+
 
     @GetMapping("/")
     public String getHomePage(Model model) {
