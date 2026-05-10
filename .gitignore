@@ -5,6 +5,12 @@ target/
 !**/src/test/**/target/
 .DS_Store
 
+### Temp ###
+Dockerfile
+docker-compose.yml
+src/main/resources/application-dev.properties
+src/main/resources/application-docker.properties
+
 ### STS ###
 .apt_generated
 .classpath

@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-        <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+        <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
             <!DOCTYPE html>
             <html lang="en">
 
@@ -29,18 +29,21 @@
                                             <div class="card-body">
                                                 <form:form method="post" action="/register"
                                                     modelAttribute="registerUser">
-                                                    <c:set var="errorConfirmPassword">
-                                                        <form:errors path="confirmPassword"
-                                                            cssClass="invalid-feedback" />
-                                                    </c:set>
                                                     <c:set var="errorFirstName">
                                                         <form:errors path="firstName" cssClass="invalid-feedback" />
+                                                    </c:set>
+                                                    <c:set var="errorLastName">
+                                                        <form:errors path="lastName" cssClass="invalid-feedback" />
                                                     </c:set>
                                                     <c:set var="errorEmail">
                                                         <form:errors path="email" cssClass="invalid-feedback" />
                                                     </c:set>
                                                     <c:set var="errorPassword">
                                                         <form:errors path="password" cssClass="invalid-feedback" />
+                                                    </c:set>
+                                                    <c:set var="errorConfirmPassword">
+                                                        <form:errors path="confirmPassword"
+                                                            cssClass="invalid-feedback" />
                                                     </c:set>
 
                                                     <div class="row mb-3">
@@ -56,10 +59,12 @@
                                                         </div>
                                                         <div class="col-md-6">
                                                             <div class="form-floating">
-                                                                <form:input class="form-control" type="text"
-                                                                    placeholder="Enter your last name"
+                                                                <form:input
+                                                                    class="form-control ${not empty errorLastName? 'is-invalid':''}"
+                                                                    type="text" placeholder="Enter your last name"
                                                                     path="lastName" />
                                                                 <label for="inputLastName">Last name</label>
+                                                                ${errorLastName}
                                                             </div>
                                                         </div>
                                                     </div>
@@ -90,6 +95,23 @@
                                                                 <label for="inputPasswordConfirm">Confirm
                                                                     Password</label>
                                                                 ${errorConfirmPassword}
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <div class="form-floating mb-3 mb-md-0">
+                                                                <form:input class="form-control" type="text"
+                                                                    placeholder="Enter your address" path="address" />
+                                                                <label for="inputFirstName">Address</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="form-floating">
+                                                                <form:input class="form-control" type="text"
+                                                                    placeholder="Enter your phone number"
+                                                                    path="phoneNumber" />
+                                                                <label for="inputLastName">Phone number</label>
                                                             </div>
                                                         </div>
                                                     </div>

@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8" %>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-        <%@taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+        <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
             <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
                 <!DOCTYPE html>
                 <html lang="en">
@@ -45,8 +45,8 @@
                                             <div class="col-md-6 col-12 mx-auto">
                                                 <h2 class="mb-3">Update order ${currentOrder.id}</h2>
                                                 <hr>
-                                                <form:form method="post" action="/admin/order/update/${currentOrder.id}" class="row"
-                                                    modelAttribute="currentOrder">
+                                                <form:form method="post" action="/admin/order/update/${currentOrder.id}"
+                                                    class="row" modelAttribute="currentOrder">
                                                     <div class="mb-3" style="display: none;">
                                                         <label class="form-label">Id:</label>
                                                         <form:input type="text" class="form-control" path="id" />
